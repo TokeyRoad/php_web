@@ -1,0 +1,84 @@
+<div>
+    <title>邮件</title>
+
+    <div id="content">
+        <!-- content starts -->
+
+        <div class="box col-md-12">
+            <div class="box-inner">
+                <div class="box-header well" data-original-title="">
+                    <h2><i class="glyphicon glyphicon-mail"></i> 邮件</h2>
+                    <div class="box-icon">
+
+                        <a href="#" class="btn btn-minimize btn-round btn-default"><i class="glyphicon glyphicon-chevron-up"></i></a>
+
+                    </div>
+                </div>
+                <div class="box-content">
+                    <form role="form">
+                        <div class="row">
+                            <div class="col-md-1">
+                                <label for="mail_type">邮件类型</label>
+                            </div>
+                            <div class="col-md-11">
+                                <label class="radio-inline">
+                                    <input type="radio" name="mail_type" id="mail_personal" checked="checked"> 个人邮件
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="mail_type" id="mail_allserver"> 全服邮件
+                                </label>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="form-group" id="player_id">
+                            <label for="exampleInputPassword1">玩家ID&nbsp&nbsp&nbsp&nbsp(多个玩家用&nbsp;,&nbsp;隔开 )</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user red"></i></span>
+                                <input type="text" class="form-control" id="post-targets">
+                            </div>
+                        </div>
+                        <div id="mail_id">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">邮件标题</label>
+                                <input type="text" class="form-control" id="post-title">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword2">邮件内容</label>
+                                <textarea class="form-control" id="post-content"></textarea>
+                            </div>
+                        </div>
+                        <br/>
+                        <div id="diamond_id">
+                            <div class="control-group">
+                                <label class="control-label" for="selectError2">奖励类型</label>
+                                <div class="controls">
+                                    <select data-placeholder="奖励类型" data-rel="chosen" id="chosen">
+                                        <option value="1">-------金币-------</option>
+                                        <option value="2">-------钻石-------</option>
+                                        <option value="3">-------芯片-------</option>
+                                        <option value="4">-------坦克-------</option>
+                                    </select>
+                                    &nbsp&nbsp&nbsp&nbsp
+                                    <label class="item-input">ID</label>
+                                    <input id="post-itemid" class="item-input" type="text">
+                                </div>
+                            </div>
+                            <br/>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">数量</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon">$</span>
+                                    <input type="number" class="form-control" id="post-amount">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="btn_id">
+                            <button type="button" id="postmail_button" class="btn btn-default">发送</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- content ends -->
+    </div>
+</div>

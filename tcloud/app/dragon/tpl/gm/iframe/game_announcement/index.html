@@ -1,0 +1,30 @@
+<div>
+    <title>游戏公告</title>
+    <div id="content">
+        <!-- content starts -->
+        <div class="box-content">
+            <div id="load_file">
+                <input id="input_file" name="file" type="file"/><br />
+            </div>
+            <input type="button" class="btn btn-default" value="上传" id="btnAjaxSubmit"/>
+            <input type="text" id="load_way" size="120" readonly/>
+        </div>
+        <div id="summernote"><p></p></div>
+        <script>
+        $(document).ready(function() {
+            $('#summernote').summernote({
+              height: 500,                 // set editor height
+              minHeight: null,             // set minimum height of editor
+              maxHeight: null,             // set maximum height of editor
+              focus: true,                  // set focus to editable area after initializing summernote
+              lang: 'zh-CN',
+              fontNames: ['Helvetica', '新宋体', '微软雅黑', '仿宋', '楷体', '宋体', '黑体']
+            });
+        });
+        </script>
+        <div class="col-md-1">
+            <button type="button" id="post_button" class="btn btn-default">提交</button>
+        </div>
+        <!-- content ends -->
+    </div>
+</div>

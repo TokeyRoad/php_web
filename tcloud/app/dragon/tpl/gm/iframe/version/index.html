@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<body>
+<div>
+    <title>游戏版本</title>
+
+    <div id="content">
+        <!-- content starts -->
+        <div class="box col-md-12">
+            <div class="box-inner">
+                <div class="box-header well" data-original-title="">
+                    <h2><i class="glyphicon glyphicon-edit"></i> 游戏版本</h2>
+                    <div class="box-icon">
+                        <a href="#" class="btn btn-minimize btn-round btn-default"><i class="glyphicon glyphicon-chevron-up"></i></a>
+                    </div>
+                </div>
+                <div class="box-content">
+                    <div>
+                        <div>
+                            <table id="channel" class="table table-bordered table-hover">
+                                <div class="row">
+                                    <div class="col-md-1">
+                                        <label for="update_type">更新开关</label>
+                                    </div>
+                                    <div class="col-md-11">
+                                        <label class="radio-inline">
+                                            <input type="radio" name="update_type" id="update_on" checked="checked"> 开(TRUE)
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="update_type" id="update_off"> 关(FALSE)
+                                        </label>
+                                    </div>
+                                </div>
+                                <thead>
+                                    <tr>
+                                        <th>Version<th></th><th></th></th>
+                                        <!-- <th>Version Code</th> -->
+                                    </tr>
+                                </thead>
+                                <tbody id="version_info">
+                                <tr id="RowVersion">
+                                    <td>大版本<input class="form-control" id="version1" value="" placeholder=""></td>
+                                    <td>中版本<input class="form-control" id="version2" value="" placeholder=""></td>
+                                    <td>小版本<input class="form-control" id="version3" value="" placeholder=""></td>
+                                </tr></tbody>
+
+                                <thead>
+                                    <tr>
+                                        <th>Mainsite</th><th>Host</th><th></th>
+                                    </tr>
+                                </thead>
+                                <tbody id="apk_info">
+                                    <tr id="RowApk">
+                                        <td>
+                                            <div>
+                                                <input class="form-control" id="load_way" value="" placeholder="">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div>
+                                                <input class="form-control" id="load_host" value="" placeholder="">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <thead>
+                                    <tr><th>
+                                        <!-- <div>
+                                            <button type="button" id="versionbtn" class="btn btn-default">版本配置保存</button>
+                                        </div> -->
+                                    </th><th></th><th></th></tr>
+                                </thead>
+                            </table>
+                            <table id="info" class="table table-bordered table-hover">
+                                <td>
+                                    <div class="form-group" id="account_info">
+                                        <label for="exampleInputPassword1">公告开关</label>
+                                    </div>
+                                    <div class="col-md-11">
+                                        <label class="radio-inline">
+                                            <input type="radio" name="notice" id="notice_true" checked="checked"> 开(TRUE)
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="notice" id="notice_false"> 关(FALSE)
+                                        </label>
+                                    </div>
+                                </td>
+                            </table>
+                            <div class="form-group" id="reason">
+                                <label for="exampleInputPassword1">公告内容</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon"></span>
+                                    <input type="text" class="form-control" id="notice_content" placeholder="请输入公告">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-content">
+                    <div>
+                        <div>
+                            Debug
+                            <table id="channel" class="table table-bordered table-hover">
+                                <div class="row">
+                                    <div class="col-md-1">
+                                        <label for="update_type_debug">更新开关</label>
+                                    </div>
+                                    <div class="col-md-11">
+                                        <label class="radio-inline">
+                                            <input type="radio" name="update_type_debug" id="update_on_debug" checked="checked"> 开(TRUE)
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="update_type_debug" id="update_off_debug"> 关(FALSE)
+                                        </label>
+                                    </div>
+                                </div>
+                                <thead>
+                                    <tr>
+                                        <th>Version<th></th><th></th></th>
+                                        <!-- <th>Version Code</th> -->
+                                    </tr>
+                                </thead>
+                                <tbody id="version_info">
+                                <tr id="RowVersion">
+                                    <td>大版本<input class="form-control" id="version1_debug" value="" placeholder=""></td>
+                                    <td>中版本<input class="form-control" id="version2_debug" value="" placeholder=""></td>
+                                    <td>小版本<input class="form-control" id="version3_debug" value="" placeholder=""></td>
+                                </tr></tbody>
+
+                                <thead>
+                                    <tr>
+                                        <th>Mainsite</th><th>Host</th><th></th>
+                                    </tr>
+                                </thead>
+                                <tbody id="apk_info">
+                                    <tr id="RowApk">
+                                        <td>
+                                            <div>
+                                                <input class="form-control" id="load_way_debug" value="" placeholder="">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div>
+                                                <input class="form-control" id="load_host_debug" value="" placeholder="">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <thead>
+                                    <tr><th>
+                                        <div>
+                                            <button type="button" id="versionbtn" class="btn btn-default">版本配置保存</button>
+                                        </div>
+                                    </th><th></th><th></th></tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>

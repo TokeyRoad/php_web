@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<body>
+<div>
+    <title>充值资源</title>
+
+    <div id="content">
+        <!-- content starts -->
+        <div class="box col-md-12">
+            <div class="box-inner">
+                <div class="box-header well" data-original-title="">
+                    <h2><i class="glyphicon glyphicon-edit"></i> 充值资源</h2>
+                    <div class="box-icon">
+                        <a href="#" class="btn btn-minimize btn-round btn-default"><i class="glyphicon glyphicon-chevron-up"></i></a>
+                    </div>
+                </div>
+                <div class="box-content">
+                    <div>
+                        <div>
+                            <table id="channel" class="table table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Version</th><th>resouce</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="version_info">
+                                <tr id="RowVersion">
+                                    <td>
+                                <div class="controls">
+                                    <select data-placeholder="充值类型" data-rel="chosen" id="chosen">
+                                        <option value="0">-------一小把钻石-------</option>
+                                        <option value="1">-------一大把钻石-------</option>
+                                        <option value="2">-------一小堆钻石-------</option>
+                                        <option value="3">-------一大堆钻石-------</option>
+                                        <option value="4">-------一盒子钻石-------</option>
+                                        <option value="5">-------一大箱钻石-------</option>
+                                        <option value="6">-------钻石堆成山-------</option>
+                                        <option value="7">--------钻石月卡-------</option>
+                                    </select>
+                                </div></td>
+                                    <td><input id="input_file" name="file" type="file"/></td>
+                                    <td><button type="button" id="filebtn" class="btn btn-default">文件保存</button></td>
+                                </tr></tbody>
+                            </table>
+                            <div>
+                                <button type="button" id="recharge_btn" class="btn btn-default">保存</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>

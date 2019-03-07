@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<body>
+<div>
+    <title>玩家</title>
+
+    <div id="content">
+        <!-- content starts -->
+        <div class="box col-md-12">
+            <div class="box-inner">
+                <div class="box-header well" data-original-title="">
+                    <h2><i class="glyphicon glyphicon-edit"></i> 玩家信息</h2>
+                    <div class="box-icon">
+                        <a href="#" class="btn btn-minimize btn-round btn-default"><i class="glyphicon glyphicon-chevron-up"></i></a>
+                    </div>
+                </div>
+                <div class="box-content">
+                    <div>
+                        <div class="row">
+                            <div class="col-md-2">
+                                    <input type="text" class="search-query form-control col-md-10" id="operate" name="query" placeholder="操作内容">
+                            </div>
+                            <div class="col-md-2">
+                                    <input type="text" class="search-query form-control col-md-10" id="user" name="query" placeholder="使用者">
+                            </div>
+                            <div class="col-md-1">
+                                <button type="button" id="post_button" class="btn btn-default">操作记录查询</button>
+                            </div>
+                        </div>
+                        <hr>
+                        <div>
+                            <table class="table table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>操作时间</th>
+                                        <th>操作者</th>
+                                        <th>操作项目</th>
+                                        <th>具体内容</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="query_info"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
